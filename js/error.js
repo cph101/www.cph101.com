@@ -1,7 +1,7 @@
 const getLastItem = thePath => thePath.substring(thePath.lastIndexOf('/') + 1)
 
 const lastItem = getLastItem(window.location.href);
-const withoutDash = lastItem.replace("-", "");
+const withoutDash = lastItem.replace("-", " ");
 
 const words = withoutDash.split(" ");
 
