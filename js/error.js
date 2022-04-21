@@ -12,4 +12,4 @@ for (let i = 0; i < words.length; i++) {
 newWords = words.join(" ");
 
 var warning = document.getElementById('WarningText');
-warning.innerHTML = `I don't know if you were looking for ${newWords}, but you're not goind to find it here!`
+warning.innerHTML = `I don't know if you were looking for ${newWords}, but you're not going to find it here!`
