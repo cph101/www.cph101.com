@@ -10,7 +10,7 @@ function checkEdit() {
   }
   }
   catch {
-    document.body.innerHTML = originalBody;
+    window.location.reload();
   }
   try {
   if (document.head.innerHTML == originalHead) {
@@ -20,7 +20,7 @@ function checkEdit() {
   }
   }
   catch {
-    document.head.innerHTML = originalHead;
+    window.location.reload();
   }
 }
 
