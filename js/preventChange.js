@@ -1,5 +1,5 @@
-const originalBody = document.body.innerHTML;
-const originalHead = document.head.innerHTML;
+var originalBody = document.body.innerHTML;
+var originalHead = document.head.innerHTML;
 
 function checkEdit() {
   try {
