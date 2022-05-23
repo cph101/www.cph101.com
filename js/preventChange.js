@@ -1,4 +1,4 @@
-const originalContents = document.body.innerHTML;
+const originalBody = document.body.innerHTML;
 const originalHead = document.head.innerHTML;
 
 function checkEdit() {
