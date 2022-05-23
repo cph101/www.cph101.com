@@ -2,14 +2,24 @@ const originalContents = document.body.innerHTML;
 const originalHead = document.head.innerHTML;
 
 function checkEdit() {
-  if (document.body.innerHTML == originalContents) {
+  try {
+  if (document.body.innerHTML == originalBody) {
     // Everything is alright
   } else {
-    document.body.innerHTML = originalContents;
+    document.body.innerHTML = originalBody;
   }
+  }
+  catch {
+    document.body.innerHTML = originalBody;
+  }
+  try {
   if (document.head.innerHTML == originalHead) {
     // Everything is alright
   } else {
+    document.head.innerHTML = originalHead;
+  }
+  }
+  catch {
     document.head.innerHTML = originalHead;
   }
 }
